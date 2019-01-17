@@ -63,37 +63,35 @@ html, body {
 	padding:1rem;
 	text-align:left;
 	font-family:sans-serif;
-	font-size:1.3rem;
+	font-size:1.2rem;
 	line-height: 1.3;
 }
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~<All Styling Nested in main-container>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .main-container{
 	max-width:800px;
 	display: flex;
 	flex-direction:column;
 	margin: 0 auto;
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~<Generalized Element styling>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ // ~~~~~~~~~~~~~~~~~~~~~~~~~~<Generalized Element styling>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
-h1{
-	font-size:4rem;
-	text-align: center;
-	padding:1.3rem 0;
-}
-h2{
-	font-size: 2rem;
-	padding:0 0 3rem 0;
-}
+	h1{
+		font-size:4rem;
+		text-align: center;
+		padding:1.3rem 0;
+	}
+	h2{
+		font-size: 2rem;
+		padding:0 0 3rem 0;
+	}
 	h3{
-		font-size: 1rem;
+		font-size: 1.5rem;
+		padding:1.3rem 0;
 	}
 	nav{
 		display:flex;
 		justify-content: space-between;
 		margin: 1rem;
-	}
-	
-	p{
-		.cleantextcontent
 	}
 	
 	footer{
@@ -103,24 +101,57 @@ h2{
 			text-align: center;
 		}
 	}
-	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Selectors Nested in Sections>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	section{
-		margin: 1rem;
 		padding: 1rem;
 		border-bottom: .2rem solid black;
+
+	}
+	
+	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Selectors Nested in Sections>~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Specific class selectors>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	.intro{
+
+		img{
+			display: block;
+			resize: both;
+			max-width: 25%;
+			margin: 0 auto;
+		}
 		
-		//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Specific class selectors>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			.intro {
-				img{
-				display: block;
-				resize: both;
-				max-width: 25%;
-				margin: 0 auto;
+		p{
+			.cleantextcontent;
+		}
+		
+	}
+
+	.skills{
+		ul{
+			list-style-type: disc;
+			padding-left: 1.3rem;
+		}
+		h3{
+			text-decoration: underline;
+		}
+
+		p{
+			.cleantextcontent;
+		}
+	}
+
+	.work-history{
+		table{
+			text-align: left;
+			
+			td{
+				text-align: center;
+				vertical-align: middle;
+			}
+
+			.odd{
+				background: lightgray;
 			}
 		}
 	}
+}	
 	
-
-
-
-}
