@@ -18,15 +18,15 @@
     <header class="nav">
       <nav>
         <a href="#">Top of Page</a>
-        <a href="#">Bottom of Page</a>
+        <a href="#bottomofpage">Bottom of Page</a>
         <a href="#">About Me</a>
         <a href="#">Portfolio</a>
         <a href="#">Contact</a>
       </nav>
     </header>
     <section class="intro">
-      <h1>Omar Salah</h1> 
       <img class ="avatar" src="https://github.com/omarsalah95.png" alt="Avatar-Img">
+      <h1>Omar Salah-Eddine</h1> 
       <div class="textcontainer">
         <h2>Intro</h2>
         <p>
@@ -41,20 +41,20 @@
     <section class="skills">
       <h2>Relevant Skills</h2>
       <ul>
-        <li>
+        <li class="textcontainer">
           <h3>Git Version Control</h3>
           <p> I have experience using git and the git work flow for controlling source code versioning.
             I have a thorough understanding of the whole process from forking the original repo to my local machine,
             to testing and merging with the master branch. </p>
         </li>
-        <li>
+        <li class="textcontainer">
           <h3>Vanilla HTML 5, CSS 3, and JavaScript</h3>
           <p> I learned the Web Development basics starting with the lowest level of web languages to build off of. I
             did this in consideration that all frameworks and new technologies in this rapidly developing field, are built
             off of and used to abstract the 3 base languages of the Web.
           </p>
         </li>
-        <li>
+        <li class="textcontainer">
           <h3>Speed Learning</h3>
           <p>I am a huge fan of learning. In my free time I find myself researching and learning new skills. Like with
             everything in life practice has made me a more efficient faster learner. This is a huge asset in the rapidly
@@ -64,44 +64,75 @@
       </ul>
     </section>
     <section class="work-history">
+      <!-- Hard coding tables sucks I can't wait to make this interactive and self filling with JS and API's -->
       <table style="width:100%">
+        <h2>Work History</h2>
           <tr>
-            <th>Company</th>
-            <th>Title</th>
-            <th>Location</th>
-            <th>Duration</th>
+            <th><h3>Company</h3></th>
+            <th><h3>Title</h3></th>
+            <th><h3>Location</h3></th>
+            <th><h3>Duration</h3></th>
           </tr>
           <tr class="odd">
               <td>Allied Security & Consulting</td>
               <td>Courtesy Patrol Officer</td>
-              <td>Greater Los Angeles</td>
+              <td>Greater Los Angeles, Ca</td>
               <td>8 Months</td>
           </tr>
           <tr class="even">
-              <td>Smoke 4 Less</td>
+              <td>TJ Trade LLC</td>
+              <td>Regional Manager</td>
+              <td>Springfield, OR - Forest Grove, Or</td>
+              <td>8 Months</td>
           </tr>
           <tr class="odd">
-              <td>Cig World</td>
+              <td>Smoke 4 Less</td>
+              <td>General Manager</td>
+              <td>Forest Grove, Or</td>
+              <td>3 Months</td>
           </tr>
           <tr class="even">
-              <td>Dunkin Donuts</td>
+              <td>Cig World</td>
+              <td>Sales Assosciate</td>
+              <td>Santa Clarita, Ca</td>
+              <td>12 Months</td>
           </tr>
           <tr class="odd">
-              <td>Panda Express</td>
+              <td>Dunkin Donuts</td>
+              <td>Over-Night Lead Baker</td>
+              <td>Santa Clarita, Ca</td>
+              <td>4 Months</td>
           </tr>
         </table> 
     </section>
     <section class="relevant-experience">
-      <!-- football -->
+      <h2>Relevant Experience</h2>
+       football 
 
     </section>
     <section class="portfolio-link">
-
+      <h2>Haven't been sold?</h2>
+      <p>
+        Here is a link to my portfolio where some of my work is featured!
+      </p>
+     <a href="https://omarsalah95.github.io/portfolio-website/" target="_blank" ><button>Show Me More!</button></a>
     </section>
     <section class="contact">
-    </section> 
-    <footer class="bottomofpage">
+      <h2>Contact Information</h2>
+      <address>This is 
+        information I would<br>
+        fill when I am not<br>
+        sharing publicly<br>
+        <contact>MyEmail<br>
+          My-Phone-Number
+        </contact>
 
+      </address>
+    </section> 
+    <footer id="bottomofpage">
+        <P>Powered by Me<br>
+        Channeled through Less and Vanilla HTML
+        </P>
     </footer>   
     
 
