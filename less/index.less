@@ -59,13 +59,34 @@ html, body {
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<STYLING>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Variables>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.cleantextcontent{
-	padding:1rem;
-	text-align:left;
-	font-family:sans-serif;
-	font-size:1.2rem;
-	line-height: 1.3;
-}
+@readfont:sans-serif;
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Mixins>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	.cleantextcontent(@font-family){
+		padding:1vw;
+		text-align:left;
+		font-family:@font-family;
+		font-size:1.2rem;
+		line-height: 1.5;
+	}
+
+	.button(@width;@bgcolor;@textcolor;){
+		width:@width;
+		height: 2vh;
+		padding: auto;
+		margin: 15px auto;
+		background-color:@bgcolor ;
+		color:@textcolor;
+		transition:1s;
+		border-radius: 3%;
+
+		&:hover{
+		background-color:@textcolor ;
+		color:@bgcolor;
+		transform: scale(1.3);
+		}
+	}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~<All Styling Nested in main-container>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .main-container{
@@ -78,33 +99,36 @@ html, body {
 	h1{
 		font-size:4rem;
 		text-align: center;
-		padding:1.3rem 0;
+		padding: 1.2vh rem 0;
 	}
+
 	h2{
 		font-size: 2rem;
-		padding:0 0 3rem 0;
+		padding:0 0 2vh 0;
 	}
+
 	h3{
 		font-size: 1.5rem;
-		padding:1.3rem 0;
+		padding:  1.2vh  0;
 	}
+
 	nav{
 		display:flex;
 		justify-content: space-between;
-		margin: 1rem;
+		margin: 1vh;
 	}
 	
+	section{
+		padding: 1vh;
+		border-bottom: .5vh solid black;
+	}
+
 	footer{
-		padding:3rem;
+		padding:3vh;
 		
 		p{
 			text-align: center;
 		}
-	}
-	section{
-		padding: 1rem;
-		border-bottom: .2rem solid black;
-
 	}
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<Selectors Nested in Sections>~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -120,7 +144,7 @@ html, body {
 		}
 		
 		p{
-			.cleantextcontent;
+			.cleantextcontent(@readfont);
 		}
 		
 	}
@@ -128,24 +152,25 @@ html, body {
 	.skills{
 		ul{
 			list-style-type: disc;
-			padding-left: 1.3rem;
+			padding-left: 1.3vw;
 		}
 		h3{
 			text-decoration: underline;
 		}
 
 		p{
-			.cleantextcontent;
+			.cleantextcontent(@readfont);
 		}
 	}
 
 	.work-history{
 		table{
-			text-align: left;
+			text-align: center;
 			
 			td{
 				text-align: center;
 				vertical-align: middle;
+				padding: 2px;
 			}
 
 			.odd{
@@ -153,5 +178,21 @@ html, body {
 			}
 		}
 	}
+	
+	.portfolio-link{
+		text-align: center;
+
+		button{
+
+			.button(33%; white; black)
+		}
+	}
+
+
+
+
+
+
+
 }	
 	
